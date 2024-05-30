@@ -12,6 +12,13 @@ Yaoyiran Li, Anna Korhonen, and Ivan Vulić. 2024. *Self-Augmented In-Context Le
 # Data
 Following our previous work [ContrastiveBLI](https://github.com/cambridgeltl/ContrastiveBLI/), [BLICEr](https://github.com/cambridgeltl/BLICEr) and [Prompt4BLI](https://github.com/cambridgeltl/prompt4bli), our data is obtained from the [XLING](https://github.com/codogogo/xling-eval) (8 languages, 56 BLI directions in total) and [PanLex-BLI](https://github.com/cambridgeltl/panlex-bli) (15 lower-resource languages, 210 BLI directions in total).
 
+Get XLING data:
+```bash
+sh get_xling_data.sh
+```
+
+For PanLex-BLI, please see [./get_panlex_data](./get_panlex_data), where we provide the code for deriving the monolingual word embeddings.
+
 # Run the Code
 Prepare BLI Vocabulary:
 ```bash
