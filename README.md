@@ -25,10 +25,18 @@ Prepare BLI Vocabulary:
 python run_extract_vocabularies.py
 ```
 
-Run BLI Evaluation (define key hyper-parameters, directories and language pairs to evaluate manually in run_bli.py):
+Run BLI Evaluation with SAIL (define key hyper-parameters, directories and language pairs to evaluate manually in run_bli.py):
 ```bash
 python run_bli.py
 ```
+
+(Optional) Run Zero-Shot Prompting Baseline Used in [Prompt4BLI](https://github.com/cambridgeltl/prompt4bli):
+```bash
+python run_zero_shot.py
+```
+
+# Self-Augmented High-Confidence Dictionaries
+We also release the self-augmented dictionaries derived with LLAMA2-13B as discussed in our paper's section 4.2 at [./AugmentedDicts-LLAMA2-13B](./AugmentedDicts-LLAMA2-13B). These high-confidence dictionaries are inferred with N<sub>it</sub> = 1, N<sub>f</sub> = 5, 000, and with word back-translation.
 
 # Citation
 Please cite our paper if you find **SAIL-BLI** useful.
