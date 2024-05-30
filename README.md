@@ -30,7 +30,7 @@ Run BLI Evaluation with SAIL (define key hyper-parameters, directories and langu
 python run_bli.py
 ```
 
-(Optional) Run Zero-Shot Prompting Baseline Used in [Prompt4BLI](https://github.com/cambridgeltl/prompt4bli):
+(Optional) Run Zero-Shot Prompting Baseline Conducted in [Prompt4BLI](https://github.com/cambridgeltl/prompt4bli):
 ```bash
 python run_zero_shot.py
 ```
