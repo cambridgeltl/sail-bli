@@ -1,7 +1,7 @@
 # SAIL-BLI
 This repository is the official PyTorch implementation of the following paper:
 
-Yaoyiran Li, Anna Korhonen, and Ivan Vulić. 2024. *Self-Augmented In-Context Learning for Unsupervised Word Translation*. In Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (ACL 2024). [[Paper]](https://arxiv.org/abs/2402.10024)
+Yaoyiran Li, Anna Korhonen, and Ivan Vulić. 2024. ***S**elf-**A**ugmented **I**n-Context **L**earning for Unsupervised Word Translation*. In Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (ACL 2024). [[Paper]](https://arxiv.org/abs/2402.10024)
 
 **SAIL** aims to improve **unsupervised** BLI by **(1)** inferring a high-confidence word translation dictionary with zero-shot prompting, **(2)** then optionally refining the high-confidence dictionary iteratively with few-shot prompting where the in-context examples are from the high-confidence dictionary in the previous iteration, and **(3)** finally conducting evaluation on the BLI test set with few-shot prompting also deriving in-context samples from the latest high-confidence dictionary. The whole process does not leverage any ground-truth word translation pairs for training/few-shot learning and improves the BLI scores by typically 10 ~ 15 P@1 points comparing to zero-shot prompting.
 
