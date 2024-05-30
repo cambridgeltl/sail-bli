@@ -8,7 +8,7 @@ Yaoyiran Li, Anna Korhonen, and Ivan Vulić. 2024. ***S**elf-**A**ugmented **I**
 # Dependencies
 - PyTorch>=1.10.1
 - Transformers>=4.28.1
-
+- OpenAI>=1.28.1 (optional)
 # Data
 Following our previous work [ContrastiveBLI](https://github.com/cambridgeltl/ContrastiveBLI/), [BLICEr](https://github.com/cambridgeltl/BLICEr) and [Prompt4BLI](https://github.com/cambridgeltl/prompt4bli), our data is obtained from the [XLING](https://github.com/codogogo/xling-eval) (8 languages, 56 BLI directions in total) and [PanLex-BLI](https://github.com/cambridgeltl/panlex-bli) (15 lower-resource languages, 210 BLI directions in total).
 
@@ -34,6 +34,8 @@ python run_bli.py
 ```bash
 python run_zero_shot.py
 ```
+
+
 # LLMs Used in Our Work
 
 Main Experiments (SAIL):
