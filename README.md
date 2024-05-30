@@ -10,7 +10,7 @@ Yaoyiran Li, Anna Korhonen, and Ivan Vulić. 2024. *Self-Augmented In-Context Le
 - Transformers>=4.28.1
 
 # Data
-Following [ContrastiveBLI](https://github.com/cambridgeltl/ContrastiveBLI/), [BLICEr](https://github.com/cambridgeltl/BLICEr) and [Prompt4BLI](https://github.com/cambridgeltl/prompt4bli), our data is obtained from the [XLING](https://github.com/codogogo/xling-eval) (8 languages, 56 BLI directions in total) and [PanLex-BLI](https://github.com/cambridgeltl/panlex-bli) (15 lower-resource languages, 210 BLI directions in total).
+Following our previous work [ContrastiveBLI](https://github.com/cambridgeltl/ContrastiveBLI/), [BLICEr](https://github.com/cambridgeltl/BLICEr) and [Prompt4BLI](https://github.com/cambridgeltl/prompt4bli), our data is obtained from the [XLING](https://github.com/codogogo/xling-eval) (8 languages, 56 BLI directions in total) and [PanLex-BLI](https://github.com/cambridgeltl/panlex-bli) (15 lower-resource languages, 210 BLI directions in total).
 
 # Run the Code
 Prepare BLI Vocabulary:
