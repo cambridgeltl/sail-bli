@@ -13,12 +13,12 @@ Yaoyiran Li, Anna Korhonen, and Ivan Vulić. 2024. *Self-Augmented In-Context Le
 Following [ContrastiveBLI](https://github.com/cambridgeltl/ContrastiveBLI/), [BLICEr](https://github.com/cambridgeltl/BLICEr) and [Prompt4BLI](https://github.com/cambridgeltl/prompt4bli), our data is obtained from the [XLING](https://github.com/codogogo/xling-eval) (8 languages, 56 BLI directions in total) and [PanLex-BLI](https://github.com/cambridgeltl/panlex-bli) (15 lower-resource languages, 210 BLI directions in total).
 
 # Run the Code
-Prepare BLI Data and Extract In-Context Examples for Few-Shot Prompting (XLING):
+Prepare BLI Vocabulary:
 ```bash
 python run_extract_vocabularies.py
 ```
 
-Run BLI Evaluation (define seed dictionary size, n_shot, LLM dir, and language pairs to evaluate manually in run_bli.py):
+Run BLI Evaluation (define key hyper-parameters, directories and language pairs to evaluate manually in run_bli.py):
 ```bash
 python run_bli.py
 ```
