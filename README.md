@@ -34,6 +34,27 @@ python run_bli.py
 ```bash
 python run_zero_shot.py
 ```
+# LLMs Used in Our Work
+
+Main Experiments (SAIL):
+
+Our main experiments include four pretrained LLaMA models without instruction-finetuning.
+| LLM | (Hugging Face) Model ID |
+| -------- | -------- |
+| LLaMA-7B | "huggyllama/llama-7b" |
+| LLaMA-13B | "huggyllama/llama-13b" |
+| LLaMA2-7B | "meta-llama/Llama-2-7b-hf" |
+| LLaMA2-13B | "meta-llama/Llama-2-13b-hf" |
+
+
+Additional ChatGPT Experiments (only Zero-Shot Prompting, corresponding to our paper's Section 4.2):
+
+Since the instruction-finetuning of ChatGPT models are likely to cover large-scale parallel data for machine translation, they are not suitable for *unsupervised* BLI. We only report zero-shot prompting with ChatGPT as a reference.
+| LLM | (OpenAI API) Model ID |
+| -------- | -------- |
+| GPT-3.5 | "gpt-3.5-turbo-0125" |
+| GPT-4 | "gpt-4-turbo-2024-04-09" |
+
 
 # Self-Augmented High-Confidence Dictionaries
 We also release the self-augmented dictionaries derived with LLAMA2-13B as discussed in our paper's section 4.2 at [./AugmentedDicts-LLAMA2-13B](./AugmentedDicts-LLAMA2-13B). These high-confidence dictionaries are inferred with N<sub>it</sub> = 1, N<sub>f</sub> = 5000, and with word back-translation.
