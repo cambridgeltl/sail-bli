@@ -11,3 +11,25 @@ Yaoyiran Li, Anna Korhonen, and Ivan Vulić. 2024. *Self-Augmented In-Context Le
 
 # Data
 Following [ContrastiveBLI](https://github.com/cambridgeltl/ContrastiveBLI/), [BLICEr](https://github.com/cambridgeltl/BLICEr) and [Prompt4BLI](https://github.com/cambridgeltl/prompt4bli), our data is obtained from the [XLING](https://github.com/codogogo/xling-eval) (8 languages, 56 BLI directions in total) and [PanLex-BLI](https://github.com/cambridgeltl/panlex-bli) (15 lower-resource languages, 210 BLI directions in total).
+
+# Run the Code
+Prepare BLI Data and Extract In-Context Examples for Few-Shot Prompting (XLING):
+```bash
+python run_extract_vocabularies.py
+```
+
+Run BLI Evaluation (define seed dictionary size, n_shot, LLM dir, and language pairs to evaluate manually in run_bli.py):
+```bash
+python run_bli.py
+```
+
+# Citation
+Please cite our paper if you find **SAIL-BLI** useful.
+```bibtex
+@inproceedings{li-etal-2024-self,
+    title     = {Self-Augmented In-Context Learning for Unsupervised Word Translation},
+    author    = {Li, Yaoyiran and Korhonen, Anna and Vuli{\'c}, Ivan},
+    booktitle = {Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics},    
+    year      = {2024}
+}
+```
