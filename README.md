@@ -36,7 +36,7 @@ python run_zero_shot.py
 ```
 
 # Self-Augmented High-Confidence Dictionaries
-We also release the self-augmented dictionaries derived with LLAMA2-13B as discussed in our paper's section 4.2 at [./AugmentedDicts-LLAMA2-13B](./AugmentedDicts-LLAMA2-13B). These high-confidence dictionaries are inferred with N<sub>it</sub> = 1, N<sub>f</sub> = 5, 000, and with word back-translation.
+We also release the self-augmented dictionaries derived with LLAMA2-13B as discussed in our paper's section 4.2 at [./AugmentedDicts-LLAMA2-13B](./AugmentedDicts-LLAMA2-13B). These high-confidence dictionaries are inferred with N<sub>it</sub> = 1, N<sub>f</sub> = 5000, and with word back-translation.
 
 # Citation
 Please cite our paper if you find **SAIL-BLI** useful.
