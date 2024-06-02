@@ -9,6 +9,7 @@ from transformers import (
     LlamaForCausalLM, LlamaTokenizer
 )
 import os
+# os.environ['TRANSFORMERS_CACHE'] = '/media/cache/'
 
 class Model_Wrapper(object):
     def __init__(self):
