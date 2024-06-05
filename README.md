@@ -56,7 +56,7 @@ Our main experiments include four pretrained LLaMA models without instruction-tu
 
 Additional ChatGPT Experiments (only Zero-Shot Prompting, corresponding to our paper's Section 4.2):
 
-Since the instruction-tuning of ChatGPT models is likely to cover large-scale parallel data for machine translation, they are **not** suitable for **unsupervised** BLI. We only report ChatGPT results derived with zero-shot prompting as a reference.
+Since the instruction-tuning of ChatGPT models is likely to cover large-scale parallel data for machine translation, they are **not** suitable for **unsupervised** BLI (in addition, the RLHF can also include supervision signals of word/sentence-level translation from annotators/users). We only report ChatGPT results derived with zero-shot prompting as a reference.
 | LLM | (OpenAI API) Model ID |
 | -------- | -------- |
 | GPT-3.5 | "gpt-3.5-turbo-0125" |
