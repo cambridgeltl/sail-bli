@@ -67,7 +67,7 @@ for (lang1, lang2) in lang_pairs:
         #    input: backward_prompt_dict_dir; output: backward_results (output dict)
         os.system('python ./src/infer_seed_dic.py --l1 {} --l2 {} --model_name {} --n_shot {} --data_dir {} --save_dir {} --source_data {} --best_template'.format(lang1, lang2, Model, n_shot, backward_prompt_dict_dir, backward_results, DATA_ROOT))
 
-        ###Step3.Update Dtrain
+        ###Step5.Update Dtrain
         #    input: forward_results and backward_results; output:  new Dtrain
         print("###### UPDATE DTRAIN")
         Dtrain_dir_current = TMP_DIR + "{}2{}_Dtrain_{}.txt".format(lang1, lang2, i_iter)
@@ -75,7 +75,7 @@ for (lang1, lang2) in lang_pairs:
         os.system('python ./src/update_train_dict.py --forward_data_dir {} --backward_data_dir {} --topk {} --save_dir {}'.format(forward_results, backward_results, topk, Dtrain_dir_current))
 
 
-        ###Step4.construct prompt for Dtest:
+        ###Step6.construct prompt for Dtest:
         #    if Dtrain exists:
         #       few-shot prompting
         #    else:
@@ -85,6 +85,6 @@ for (lang1, lang2) in lang_pairs:
         sys.stdout.flush()
         os.system('python ./src/extract_bli_test_data.py --l1 {} --l2 {} --emb_src_dir {} --emb_tgt_dir {} --train_dict_dir {} --test_dict_dir {} --save_dir {} --source_data {}'.format(lang1, lang2, ROOT_EMB_SRC, ROOT_EMB_TRG, Dtrain_dir_current, ROOT_TEST_DICT, test_prompt_dict_dir, DATA_ROOT))
 
-        ###Step5. LLM inference and eval 
+        ###Step7. LLM inference and eval 
         #    input: test_prompt_dict ; output:  metric scores
         os.system('python ./src/main.py --l1 {} --l2 {} --model_name {} --train_size {} --n_shot {} --data_dir {} --test_dict_dir {} --i_iter {} --best_template'.format(lang1, lang2, Model, size_train, n_shot, DATA_ROOT, test_prompt_dict_dir, i_iter))
