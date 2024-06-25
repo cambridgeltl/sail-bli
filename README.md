@@ -53,6 +53,7 @@ Our main experiments include four pretrained LLaMA models without instruction-tu
 | LLaMA2-7B | "meta-llama/Llama-2-7b-hf" |
 | LLaMA2-13B | "meta-llama/Llama-2-13b-hf" |
 
+Update: LLaMA3-8B ```meta-llama/Meta-Llama-3-8B``` is also supported in our code repo now.
 
 Additional ChatGPT Experiments (only Zero-Shot Prompting, corresponding to our paper's Section 4.2):
 
