@@ -70,7 +70,7 @@ We also release the self-augmented dictionaries derived with LLAMA2-13B as discu
 # Citation
 Please cite our paper if you find **SAIL-BLI** useful.
 ```bibtex
-@inproceedings{li-etal-2024-self,
+@inproceedings{li-etal-2024-self-augmented,
     title     = {Self-Augmented In-Context Learning for Unsupervised Word Translation},
     author    = {Li, Yaoyiran and Korhonen, Anna and Vuli{\'c}, Ivan},
     booktitle = {Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics},    
